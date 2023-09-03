@@ -1,10 +1,8 @@
-import os
 from redis import StrictRedis
+import os
 
-# استخدم المتغيرات البيئية بدلاً من البنية التي قدمتها
-DATABASE_URL = os.environ.get('Postgres.DATABASE_URL')
-CACHE_HOST = os.environ.get('Redis.REDISHOST')
-PRISMA_DB = f'{DATABASE_URL}?connection_limit=100'
+# استخدم المتغير CACHE_HOST للحصول على عنوان خادم Redis من المتغيرات البيئية
+cache_host = os.environ.get("CACHE_HOST")
 
-# قم بإنشاء اتصال بقاعدة البيانات Redis باستخدام المتغيرات البيئية
-db = StrictRedis(decode_responses=True)
+# قم بتكوين اتصال قاعدة البيانات Redis باستخدام المتغير CACHE_HOST
+db = StrictRedis(host=cache_host, decode_responses=True)
