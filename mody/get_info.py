@@ -8,7 +8,7 @@ async def getBot_token():
     user_bot = "EEObot"
     
     try: 
-        from get_info import token
+        from info import token
         bot = Client('MainBot', 23650675, '748bb442baf8fdb359be739d58ae9b07',
                      no_updates=True, in_memory=True, bot_token=token)
         await bot.start()
@@ -19,19 +19,19 @@ async def getBot_token():
         await bot.start()            
    
     try:
-        from get_info import sudo_username
+        from info import sudo_username
         get_sudo = await bot.get_chat(sudo_username)
     except:
         pass
     
     try:
-        from get_info import user_bot
+        from info import user_bot
         get_bot_tmwel = await bot.get_chat(user_bot)
     except:
         pass
     
     try:
-        from get_info import user_id
+        from info import user_id
     except:
         pass
     
