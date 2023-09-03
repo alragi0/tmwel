@@ -7,14 +7,17 @@ async def getBot_token():
     sudo_id = "6699312679"
     user_bot = "EEObot"
     
-    try:
+    try: 
         from get_info import token
         bot = Client('MainBot', 27786450, '1fb7b1af2837205d7ce8d77cefc0acbd',
                      no_updates=True, in_memory=True, bot_token=token)
         await bot.start()
     except:
-        pass
-    
+        from info import token
+        bot = Client('MainBot', 27786450, '1fb7b1af2837205d7ce8d77cefc0acbd',
+                     no_updates=True, in_memory=True, bot_token=token)
+        await bot.start()            
+   
     try:
         from git_info import sudo_username
         get_sudo = await bot.get_chat(sudo_username)
