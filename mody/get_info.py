@@ -19,7 +19,7 @@ async def getBot_token():
         await bot.start()            
    
     try:
-        from git_info import sudo_username
+        from get_info import sudo_username
         get_sudo = await bot.get_chat(sudo_username)
     except:
         pass
