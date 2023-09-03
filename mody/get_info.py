@@ -9,12 +9,12 @@ async def getBot_token():
     
     try: 
         from get_info import token
-        bot = Client('MainBot', 27786450, '1fb7b1af2837205d7ce8d77cefc0acbd',
+        bot = Client('MainBot', 23650675, '748bb442baf8fdb359be739d58ae9b07',
                      no_updates=True, in_memory=True, bot_token=token)
         await bot.start()
     except:
         from info import token
-        bot = Client('MainBot', 27786450, '1fb7b1af2837205d7ce8d77cefc0acbd',
+        bot = Client('MainBot', 23650675, '748bb442baf8fdb359be739d58ae9b07',
                      no_updates=True, in_memory=True, bot_token=token)
         await bot.start()            
    
