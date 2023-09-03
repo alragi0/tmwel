@@ -2,10 +2,10 @@ from asyncio import get_event_loop
 from pyrogram import Client
 
 async def getBot_token():
-    token = "6109895485:AAE43imQ2y0W_yDx5B_Fsdod_SWt7MyrKQg"
-    sudo_username = "YYNNXXXX"
-    sudo_id = "6699312679"
-    user_bot = "EEObot"
+ ##   token = "6109895485:AAE43imQ2y0W_yDx5B_Fsdod_SWt7MyrKQg"
+ ##   sudo_username = "YYNNXXXX"
+ ##  sudo_id = "6699312679"
+ ##   user_bot = "EEObot"
     
     try: 
         from info import token
@@ -31,7 +31,7 @@ async def getBot_token():
         pass
     
     try:
-        from info import user_id
+        from info import sudo_id
     except:
         pass
     
