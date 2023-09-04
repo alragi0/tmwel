@@ -3,4 +3,3 @@ redis
 pyTelegramBotAPI
 TgCrypto
 aiohttp
-sudo apt-get install screen
