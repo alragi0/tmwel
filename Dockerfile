@@ -14,5 +14,5 @@ RUN pip3 install -r requirements.txt
 EXPOSE 5000
 
 # تشغيل التطبيق عند بدء تشغيل الحاوية
-CMD ["python3", "app.py"]
+CMD ["python3", "main.py"]
 
