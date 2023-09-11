@@ -3,4 +3,3 @@ redis
 pyTelegramBotAPI
 TgCrypto
 aiohttp
-screen
